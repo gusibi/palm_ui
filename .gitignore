@@ -167,3 +167,4 @@ flagged/
 outputs/txt2img/*
 outputs/img2img/*
 temp.png
+.vercel
