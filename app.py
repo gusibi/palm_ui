@@ -41,7 +41,6 @@ def get_sample_result(prompt):
     }
     api_key = os.getenv("PALM_API_KEY")
     palm = get_palm(api_key)
-    print(api_key)
     response = palm.generate_text(**defaults, prompt=prompt)
     print(response.result)
     return response.result
