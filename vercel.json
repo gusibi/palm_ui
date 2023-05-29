@@ -1,8 +1,12 @@
 {
-    "rewrites": [
+    "version": 2,
+    "builds": [
         {
-            "source": "/(.*)",
-            "destination": "/"
+            "src": "server.py",
+            "use": "@vercel/python",
+            "config": {
+                "pythonVersion": "3.9"
+            }
         }
     ]
 }
